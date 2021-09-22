@@ -12,3 +12,4 @@ git add . && git commit -m " docstring updated" && git push origin main
 cp Research\ Work/demo.ipynb .
 
 ```
+[Git Handbook] (https://guides.github.com/introduction/git-handbook/)
