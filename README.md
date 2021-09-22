@@ -21,3 +21,16 @@ cp Research\ Work/demo.ipynb .
 
 <img src= "plots/and.png" title= "Forest" height="40%" width="60%">
 
+## python code
+
+```
+def main(data, modelName, plotName, eta, epochs):
+    df = pd.DataFrame(data)
+    print(df)
+    X, y = prepare_data(df)
+    model = Perceptron(eta=eta, epochs=epochs)
+    model.fit(X, y)
+    _ = model.total_loss()
+    save_model(model, filename=modelName)
+    save_plot(df, plotName, model)
+```
